@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Pixelify+Sans:wght@400..700&family=Preahvihear&display=swap');
+body {
+  width: 100%;
+  align-items: center;
+  height: 100%;
+
+  background-position: center center;
+
+  background-repeat: no-repeat;
+
+  background-attachment:fixed;
+
+  background-size: cover;
+
+  background-image: url("images/neom-anozjF6uqI0-unsplash.jpg.jpg");
+}
+
+img.logo-img{
+}
+
+.ni-one{
+    margin-left: 270%;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(58, 58, 58);
+    font-size: 1.5rem;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color: black;
+}
+
+a.nav-link{
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin: 0px 30px;
+    margin-bottom: 1rem;
+    /*font-family: "Odibee Sans", sans-serif;*/
+    font-family: "Preahvihear", sans-serif;
+}
+
+.div-bh{
+    text-align: center;
+}
+
+.big-heading{
+    font-family: "Preahvihear", sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.sub-heading{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.btn-bh{
+    font-size: 2rem;
+    padding: 1% 2%;
+    font-family: "Preahvihear", sans-serif;
+    font-weight: 500;
+    background-color: rgb(15, 15, 15);
+    color: rgb(227, 216, 216);
+    margin-top: 0.7%;
+}
+.btn-bh:hover{
+    background-color: black;
+}

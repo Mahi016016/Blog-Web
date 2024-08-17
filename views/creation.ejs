@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Create Blog</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous" />
+    <link rel="stylesheet" href="creation.css" />
+</head>
+<body>
+<div class="full">
+     <% if(locals.copy_bd){ %>
+        <a href="/blogs"><button class="all-b" type="button">All Blogs</button></a>
+        <h1 class="chead">Blog has been created!</h1>
+     <% } else{ %>
+        <h1 class="chead">Create your blog</h1>
+     <% } %>
+
+    <form action="/created" method="post">
+      <div class="form-group">
+        <label class="label-hc" for="blogh">Heading</label>
+        <input type="text" name="blogh" id="blogh" class="heading-blog" required />
+      </div>
+      <div class="form-group">
+        <label class="label-hc" for="bloga">Name</label>
+        <input type="text" name="bloga" id="bloga" class="author-blog" required />
+      </div>
+      <div class="form-group">
+        <label class="label-hc" for="blogc">Content</label>
+        <textarea name="blogc" id="blogc" class="form-control" minlength="100" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-lg btn-create">
+        Post
+      </button>
+      <button type="reset" class="btn btn-lg btn-reset">
+        Reset
+      </button>
+    </form>
+</div>
+</body>
+</html>

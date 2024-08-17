@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <link rel="stylesheet" href="/blog.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-heading">All Blogs</h1>
+        <% blogs.forEach(function(blog) { %>
+            <div class="blog">
+                <div class="blog-content">
+                    <% 
+                        const lines = blog.content.split('\n');
+                        const firstLine = lines[0];
+                        const remainingContent = lines.slice(1, -1).join('\n');
+                        const lastLine = lines[lines.length - 1];
+                    %>
+                    <p><p class="bh3"><%= firstLine %></p> <p class="content"><%= remainingContent %></p> <p class="nameauthor"><%= lastLine %></p></p>
+                </div>
+                <form action="/delete" method="POST" style="display:inline;">
+                    <input type="hidden" name="blogFile" value="<%= blog.filename %>">
+                    <button type="submit" class="delete-button">Delete</button>
+                </form>
+                <form action="/edit/<%= blog.filename %>" method="GET" style="display:inline;">
+                    <button type="submit" class="edit-button">Edit</button>
+                </form>
+            </div>
+        <% }); %>
+        <a href="/" class="back-link">Back to Home</a>
+    </div>
+</body>
+</html>

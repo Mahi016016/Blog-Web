@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Blog</title>
+    <link rel="stylesheet" href="/modify.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="chead">Edit Your Blog</h1>
+        <form action="/edit" method="POST">
+            <div class="form-group">
+                <label class="label-hc" for="blogh">Heading</label>
+                <input type="text" name="blogh" id="blogh" class="heading-blog" value="<%= blogh %>" required />
+            </div>
+            <div class="form-group">
+                <label class="label-hc" for="blogc">Content</label>
+                <textarea name="blogc" id="blogc" class="form-control" minlength="100" style="height: 200px;" required><%= blogc %></textarea>
+            </div>
+            <input type="hidden" name="blogFile" value="<%= blogFile %>">
+            <button type="submit" class="btn btn-warning btn-lg btn-create">Update</button>
+            <a href="/blogs" class="btn btn-warning btn-lg btn-reset">Cancel</a>
+        </form>
+    </div>
+</body>
+</html>

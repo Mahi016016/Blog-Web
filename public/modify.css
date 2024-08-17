@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Preahvihear&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grenze:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Headland+One&family=Odibee+Sans&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pixelify+Sans:wght@400..700&family=Preahvihear&display=swap');
+
+body {
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url("images/new\ 5.jpg");
+    font-family: "PT Sans", sans-serif;
+}
+
+.container {
+    width: 52%;
+    margin: 5% 26% 0% 22%;
+    padding: 2% 0%;
+    padding-left: 4%;
+    background-color: rgba(0, 0, 0, 0.77);
+    border-radius: 10px;
+    color: antiquewhite;
+    font-family: "PT Sans", sans-serif;
+}
+
+.chead {
+    text-align: center;
+    font-size: 2.5rem;
+    color: rgb(206, 66, 124);
+    margin-bottom: 2%;
+    font-family: "PT Sans", sans-serif;
+}
+
+.label-hc {
+    font-size: 1.5rem;
+    color: antiquewhite;
+    font-family: "PT Sans", sans-serif;
+}
+
+.heading-blog, .form-control {
+    width: 90%;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: 3px solid antiquewhite;
+    background-color: transparent;
+    color: antiquewhite;
+    margin-top: 1%;
+    font-family: "PT Sans", sans-serif;
+}
+
+.btn-create, .btn-reset {
+    font-size: 1.5rem;
+    padding: 0.5rem 2rem;
+    color: antiquewhite;
+    font-weight: 500;
+    background-color: rgb(206, 66, 124);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 1rem;
+    font-family: "PT Sans", sans-serif;
+}
+
+.btn-create:hover, .btn-reset:hover {
+    color: antiquewhite;
+    background-color: rgb(196, 49, 110);
+}
+
+.author-blog {
+    background-color: transparent;
+    margin-top: 1%;
+    width: 90%;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: 3px solid antiquewhite;
+    color: antiquewhite;
+    font-family: "PT Sans", sans-serif;
+  }
+  
